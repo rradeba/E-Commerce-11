@@ -1,17 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css'; // Global CSS (optional)
-import Main from './main.jsx'; // Import the Main component (ensure this matches the correct file case)
+import { createRoot } from 'react-dom/client';  // Import createRoot from 'react-dom/client'
+import './index.css'; 
+import Main from './main.jsx';
 import reportWebVitals from './reportWebVitals';
 
-console.log("React app has started"); // Logs a message when the app starts
+console.log("React app has started"); 
 
-ReactDOM.render(
+// Use createRoot for React 18+
+const root = createRoot(document.getElementById('root'));  // Create the root element for rendering
+root.render(
   <React.StrictMode>
-    <Main /> 
-  </React.StrictMode>,
-  document.getElementById('root')  // Attach the app to the 'root' div in public/index.html
+    <Main />
+  </React.StrictMode>
 );
 
-// Optionally log performance metrics
 reportWebVitals(console.log);
