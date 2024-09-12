@@ -7,7 +7,7 @@ import { Button } from 'react-bootstrap';  // Import Bootstrap's Button componen
 function Main() { 
   return (
     <div className="main">
-      <MyNavbar />  {/* Use the custom navbar component */}
+      <MyNavbar />  
       <div className="card">
         <h1>Reid's Book Market</h1>
         <p>Management App For Reid's Books</p>
