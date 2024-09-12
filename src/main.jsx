@@ -1,5 +1,5 @@
 import React from 'react'; 
-import MyNavbar from './MyNavbar';  // Import your custom navbar component
+import MyNavbar from './navbar.jsx';  // Import your custom navbar component
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
 import './main.css'; // Custom CSS for Main component
 import { Button } from 'react-bootstrap';  // Import Bootstrap's Button component
