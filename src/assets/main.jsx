@@ -11,7 +11,7 @@ function Main() {
       <div className="card">
         <h1>Crypto Market</h1>
         <p>Find new crypto coins in our directory.</p>
-        <img className="image img-fluid" src="/crypto.jpg" alt="Crypto" />
+        <img className="image img-fluid" src="/book.png" alt="Crypto" />
         <Button className="custom-button mb-2">
           Shop Now
         </Button>
