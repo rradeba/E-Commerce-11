@@ -1,13 +1,13 @@
 import React from 'react'; 
-import MyNavbar from './MyNavbar'; 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'react-bootstrap'; 
+import MyNavbar from './MyNavbar';  // Import your custom navbar component
+import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
+import './main.css'; // Custom CSS for Main component
+import { Button } from 'react-bootstrap';  // Import Bootstrap's Button component
 
 function Main() { 
   return (
     <div className="main">
-      <MyNavbar />  
-
+      <MyNavbar />  {/* Use the custom navbar component */}
       <div className="card">
         <h1>Crypto Market</h1>
         <p>Find new crypto coins in our directory.</p>

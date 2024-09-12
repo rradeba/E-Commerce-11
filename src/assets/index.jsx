@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'; // Import any global CSS (optional)
-import Main from './main'; // Import your main component (or App component)
+import './index.css'; // Global CSS (optional)
+import Main from './main'; // Import the Main component (ensure this matches the correct file case)
 import reportWebVitals from './reportWebVitals';
 
-console.log("React app has started"); // This will log to the console when the app starts
+console.log("React app has started"); // Logs a message when the app starts
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main />  
+    <Main />  {/* Render the Main component */}
   </React.StrictMode>,
-  document.getElementById('root')  // Render into the root div in public/index.html
+  document.getElementById('root')  // Attach the app to the 'root' div in public/index.html
 );
 
-// If you want to measure performance, pass a function to log results (optional)
+// Optionally log performance metrics
 reportWebVitals(console.log);
