@@ -1,16 +1,13 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';  // Ensure you're using the correct React DOM import for React 18+
+import { createRoot } from 'react-dom/client';
 
-import Main from './main.jsx';  // Ensure this import path is correct
-import reportWebVitals from './reportWebVitals';
+import Main from './main.jsx';  // Ensure the path is correct
 
-console.log('Index.js is rendering');
+console.log('Index.js is rendering');  // Debugging log
 
-const root = createRoot(document.getElementById('root'));  // Ensure there's an element with id 'root'
+const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Main />
   </React.StrictMode>
 );
-
-reportWebVitals();
