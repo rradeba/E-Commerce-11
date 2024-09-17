@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';  // Ensure you're using the correct React DOM import for React 18+
-import './index.css'; 
+
 import Main from './main.jsx';  // Ensure this import path is correct
 import reportWebVitals from './reportWebVitals';
 
