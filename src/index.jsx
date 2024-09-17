@@ -1,16 +1,14 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';  // Import createRoot from 'react-dom/client'
-import Main from './main.jsx';
+import { createRoot } from 'react-dom/client';  // Ensure you're using the correct React DOM import for React 18+
+import './index.css'; 
+import Main from './main.jsx';  // Ensure this import path is correct
 import reportWebVitals from './reportWebVitals';
 
-console.log("React app has started"); 
-
-// Use createRoot for React 18+
-const root = createRoot(document.getElementById('root'));  // Create the root element for rendering
+const root = createRoot(document.getElementById('root'));  // Ensure there's an element with id 'root'
 root.render(
   <React.StrictMode>
     <Main />
   </React.StrictMode>
 );
 
-reportWebVitals(console.log);
+reportWebVitals();
