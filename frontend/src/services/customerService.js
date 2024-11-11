@@ -9,3 +9,13 @@ export const createCustomer = (customerData) => {
 };
 
 
+export const deleteCustomer = async (id) => {
+  try {
+    await axios.delete(`${API_URL}/${id}`);
+  } catch (error) {
+    console.error('Error deleting customer:', error);
+    throw error; 
+  }
+};
+
+

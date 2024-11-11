@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getCustomers } from '../services/customerService';
+import { getCustomers, deleteCustomer } from '../services/customerService';
 import { Button, Table } from 'react-bootstrap';
 
 const CustomerList = () => {
@@ -18,8 +18,17 @@ const CustomerList = () => {
     fetchCustomers();
   }, []);
 
-  const handleDelete = (id) => {
-    // Implement delete functionality (similar to create)
+  // Handle Delete
+  const handleDelete = async (id) => {
+    const confirmed = window.confirm('Are you sure you want to delete this customer?');
+    if (confirmed) {
+      try {
+        await deleteCustomer(id);
+        setCustomers(customers.filter(customer => customer.id !== id));
+      } catch (error) {
+        console.error('Error deleting customer:', error);
+      }
+    }
   };
 
   return (

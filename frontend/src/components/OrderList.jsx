@@ -19,7 +19,7 @@ const OrderList = () => {
   }, []);
 
   const handleDelete = (id) => {
-    // Implement delete functionality
+    
   };
 
   return (
